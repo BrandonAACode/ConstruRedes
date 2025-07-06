@@ -1,0 +1,19 @@
+function Portada() {
+  return (
+    <div
+      className="d-flex align-items-center justify-content-center text-white text-center"
+      style={{
+        backgroundImage: "url('/Portada.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        width: '100vw',
+        height: '100vh',
+        overflow: 'hidden'
+      }}
+    >
+      <div className="container"></div>
+    </div>
+  );
+}
+export default Portada
