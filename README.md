@@ -1,12 +1,41 @@
-# React + Vite
+# ConstruRedes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ConstruRedes** es una empresa dedicada a la **construcción de remodelaciones, terminaciones y servicios de redes**, con un enfoque profesional en áreas como CCTV, control de acceso y cableado estructurado. Este proyecto es una página web informativa desarrollada como parte de la evaluación de Frontend del 3er semestre de la carrera de Analista Programador en INACAP.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- ⚛️ **React** (creado con Vite)
+- 🎨 **Bootstrap 5**
+- 💻 HTML5, CSS3, JavaScript
+- 📦 Bootstrap Icons
+- 📂 Git + GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 ¿Qué incluye la web?
+
+- Menú de navegación fijo y responsive
+- Portada con imagen principal (hero)
+- Página de "Quiénes Somos" con descripción detallada de la empresa
+- Sección de Servicios dividida en:
+  - 🏗️ Servicios de Construcción
+  - 🧠 Servicios de Redes
+- Botones desplegables para mostrar/ocultar servicios con tarjetas
+- Formulario de contacto funcional con validación
+- Footer profesional con íconos de redes sociales e información de contacto
+
+---
+
+## 🌐 Cómo ver el proyecto
+
+> Pronto disponible en línea vía GitHub Pages o Vercel.
+
+De momento puedes clonar este repositorio:
+
+```bash
+git clone https://github.com/BrandonAACode/ConstruRedes.git
+cd constru-redes
+npm install
+npm run dev
