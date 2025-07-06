@@ -1,3 +1,4 @@
+// Página con descripción general de la empresa
 function QuienesSomos() {
   return (
     <div className="container mt-5 pt-5 text-azulrey">

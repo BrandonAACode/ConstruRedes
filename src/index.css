@@ -1,33 +1,36 @@
+/* Define el color de fondo negro y texto azul rey en todo el sitio */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: #000;
-  color: #1c4966;
+  color: #1c4966; /* Azul personalizado usado en texto principal */
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Hace que el contenedor raíz (root) use layout de página completa */
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* Asegura que el contenido del sitio se expanda y mantenga el footer al final */
 main {
   flex: 1;
   background-color: #000;
 }
 
-/* Enlaces */
+/* Estilo base de enlaces: azul rey sin subrayado */
 a {
   color: #1c4966;
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Al pasar el mouse se subraya */
 }
 
-/* Botones */
+/* Botones base del sitio: oscuros con texto blanco, se pintan azul al pasar el mouse */
 button {
   border-radius: 8px;
   padding: 0.6em 1.2em;
@@ -41,19 +44,18 @@ button {
   transition: background-color 0.3s ease;
 }
 button:hover {
-  background-color: #1c4966;
+  background-color: #1c4966; /* Cambia a azul al pasar el mouse */
 }
 
-/* Color para footer y menu */
+/* Clase reutilizable para fondo azul rey */
 .bg-azulrey {
   background-color: #1c4966 !important;
 }
 
-/* Agrandado y cambio de color al pasar mouse iconos */
+/* Estilo de los íconos del footer con efecto hover blanco */
 .footer-icon {
   transition: color 0.3s ease;
 }
-
 .footer-icon:hover {
-  color: #ffffff !important;
+  color: #ffffff !important; /* Se vuelven blancos al pasar el mouse */
 }

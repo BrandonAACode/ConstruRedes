@@ -1,3 +1,4 @@
+// Este componente muestra una imagen principal a pantalla completa (estilo hero)
 function Portada() {
   return (
     <div
@@ -7,7 +8,7 @@ function Portada() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        width: '100vw',
+        width: '90vw',
         height: '100vh',
         overflow: 'hidden'
       }}

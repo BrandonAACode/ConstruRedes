@@ -1,9 +1,11 @@
 import { useState } from 'react';
 
+// Este componente muestra los servicios divididos en construcción y redes con tarjetas visuales
 function Servicios() {
   const [mostrarConstruccion, setMostrarConstruccion] = useState(false);
   const [mostrarRedes, setMostrarRedes] = useState(false);
 
+  // Lista de servicios de construcción con titulo, descripción e imagen
   const serviciosConstruccion = [
     {
       titulo: 'Remodelaciones',
@@ -32,6 +34,7 @@ function Servicios() {
     },
   ];
 
+  // Lista de servicios del área de redes con titulo, descripción e imagen
   const serviciosRedes = [
     {
       titulo: 'CCTV',
@@ -53,7 +56,8 @@ function Servicios() {
   return (
     <div className="container py-5 mt-5">
       <h2 className="text-center mb-5"><i>Nuestros Servicios</i></h2>
-
+      
+      {/* Botones con oculktar */}
       <div className="mb-4 d-flex gap-3 flex-wrap justify-content-center">
         <button className="btn btn-outline-primary" onClick={() => setMostrarConstruccion(!mostrarConstruccion)}>
           {mostrarConstruccion ? 'Ocultar' : 'Ver'} Servicios de Construcción
@@ -66,6 +70,7 @@ function Servicios() {
 
       {mostrarConstruccion && (
         <>
+        {/* Área de Construcción */}
           <h4 className="text-uppercase text-primary mb-4">Área de Construcción</h4>
           <div className="row mb-5">
             {serviciosConstruccion.map((serv, i) => (
@@ -85,6 +90,7 @@ function Servicios() {
 
       {mostrarRedes && (
         <>
+        {/* Área de Redes */}
           <h4 className="text-uppercase text-primary mb-4">Área de Redes</h4>
           <div className="row mb-5">
             {serviciosRedes.map((serv, i) => (

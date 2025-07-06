@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+// Formulario de contacto con validación básica
 function Contacto() {
   const [formulario, setFormulario] = useState({
     nombre: '',
