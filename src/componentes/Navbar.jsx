@@ -29,7 +29,7 @@ function Navbar() {
       <div className="container">
         {/* Inicio, redirige al inicio */}
         <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
-          {/* ✅ Ruta corregida con import.meta.env.BASE_URL para producción */}
+          {/* Ruta corregida con import.meta.env.BASE_URL para producción */}
           <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Logo ConstruRedes" height="30" />
           <span className="fw-bold">ConstruRedes</span>
         </Link>
