@@ -4,7 +4,7 @@ function Portada() {
     <div
       className="d-flex align-items-center justify-content-center text-primary text-center"
       style={{
-        backgroundImage: "url('/Portada.jpg')",
+        backgroundImage: `url('${import.meta.env.BASE_URL}Portada.jpg')`, // ✅ Ruta dinámica compatible con Vite + GitHub Pages
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -17,4 +17,4 @@ function Portada() {
     </div>
   );
 }
-export default Portada
+export default Portada;

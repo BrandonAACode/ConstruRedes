@@ -6,9 +6,10 @@ function Footer() {
           {/* Columna 1: Empresa */}
           <div className="col-md-4 mb-4">
             <div className="d-flex align-items-center gap-2">
-              <img src="/logo.jpg" alt="Logo" height="30" />
+              {/* ✅ Ruta del logo corregida para producción con import.meta.env.BASE_URL */}
+              <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Logo" height="30" />
               <h5 className="mb-0">ConstruRedes</h5>
-              </div>
+            </div>
 
             <p><b><i>Especialistas en construcción y soluciones en redes para empresas y hogares.</i></b></p>
           </div>
@@ -25,12 +26,15 @@ function Footer() {
           <div className="col-md-4 mb-4">
             <h5 className="fw-bold">Síguenos en nuestras redes sociales.</h5>
             <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" className="text-dark fs-4 me-4 footer-icon">
-            <i className="bi bi-tiktok"></i></a>
+              <i className="bi bi-tiktok"></i>
+            </a>
             <a href="https://www.instagram.com/constru_redes?igsh=MXg0MTJoMWJnc29hbQ==" target="_blank" rel="noopener noreferrer" className="text-dark fs-4 me-4 footer-icon">
-            <i className="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@construredes.cad?_t=ZM-8xoaPUk4BVN&_r=1" target="_blank" rel="noopener noreferrer" className="text-dark fs-4 footer-icon">
-            <i className="bi bi-facebook"></i></a>
-            </div>
+              <i className="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/construredes.cad" target="_blank" rel="noopener noreferrer" className="text-dark fs-4 footer-icon">
+              <i className="bi bi-facebook"></i>
+            </a>
+          </div>
         </div>
 
         <hr className="border-white mt-4" />

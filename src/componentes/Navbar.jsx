@@ -9,7 +9,7 @@ function Navbar() {
   // Hook que escucha el evento scroll y cambia el estado "scrolled"
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);// Si se desplazó más de 50px, aplica fondo sólido
+      setScrolled(window.scrollY > 50); // Si se desplazó más de 50px, aplica fondo sólido
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -18,19 +18,20 @@ function Navbar() {
 
   return (
     <nav
-  className={`navbar navbar-expand-lg bg-azulrey navbar-dark fixed-top px-4`}
-  style={{
-    backgroundColor: scrolled ? '#4169e1' : 'rgba(65, 105, 225, 0.85)', // fondo dinámico
-    transition: 'background-color 0.3s ease', // transición suave al hacer scroll
-    zIndex: 10,
-    boxShadow: '0 2px 10px rgba(0, 0, 0, 0.4)', // sombra para resaltar el menú
-  }}
+      className={`navbar navbar-expand-lg bg-azulrey navbar-dark fixed-top px-4`}
+      style={{
+        backgroundColor: scrolled ? '#4169e1' : 'rgba(65, 105, 225, 0.85)', // fondo dinámico
+        transition: 'background-color 0.3s ease', // transición suave al hacer scroll
+        zIndex: 10,
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.4)', // sombra para resaltar el menú
+      }}
     >
       <div className="container">
         {/* Inicio, redirige al inicio */}
         <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
-        <img src="/logo.jpg" alt="Logo ConstruRedes" height="30" />
-        <span className="fw-bold">ConstruRedes</span>
+          {/* ✅ Ruta corregida con import.meta.env.BASE_URL para producción */}
+          <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Logo ConstruRedes" height="30" />
+          <span className="fw-bold">ConstruRedes</span>
         </Link>
 
         {/* Botón de hamburguesa visible en pantallas pequeñas (menú colapsable) */}
