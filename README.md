@@ -30,12 +30,4 @@
 
 ## 🌐 Cómo ver el proyecto
 
-> Pronto disponible en línea vía GitHub Pages o Vercel.
-
-De momento puedes clonar este repositorio:
-
-```bash
-git clone https://github.com/BrandonAACode/ConstruRedes.git
-cd constru-redes
-npm install
-npm run dev
+https://BrandonAACode.github.io/ConstruRedes
