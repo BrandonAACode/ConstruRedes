@@ -28,7 +28,11 @@ function Navbar() {
     >
       <div className="container">
         {/* Inicio, redirige al inicio */}
-        <Link className="navbar-brand" to="/">ConstruRedes</Link>
+        <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
+        <img src="/logo.jpg" alt="Logo ConstruRedes" height="30" />
+        <span className="fw-bold">ConstruRedes</span>
+        </Link>
+
         {/* Botón de hamburguesa visible en pantallas pequeñas (menú colapsable) */}
         <button
           className="navbar-toggler"

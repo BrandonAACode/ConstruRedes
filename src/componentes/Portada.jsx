@@ -2,7 +2,7 @@
 function Portada() {
   return (
     <div
-      className="d-flex align-items-center justify-content-center text-white text-center"
+      className="d-flex align-items-center justify-content-center text-primary text-center"
       style={{
         backgroundImage: "url('/Portada.jpg')",
         backgroundSize: 'cover',

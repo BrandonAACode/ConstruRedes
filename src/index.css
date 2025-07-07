@@ -1,11 +1,11 @@
-/* Define el color de fondo negro y texto azul rey en todo el sitio */
+/* Define el color de fondo negro y texto azul rey en todo el sitio, además de tamaño */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: #000;
-  color: #1c4966; /* Azul personalizado usado en texto principal */
-  font-family: 'Segoe UI', sans-serif;
+  color: rgb(153, 153, 153); /* Gris personalizado usado en texto principal */
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Hace que el contenedor raíz (root) use layout de página completa */
@@ -30,7 +30,7 @@ a:hover {
   text-decoration: underline; /* Al pasar el mouse se subraya */
 }
 
-/* Botones base del sitio: oscuros con texto blanco, se pintan azul al pasar el mouse */
+/* Botones base del sitio: oscuros con texto azul, se pintan azul y texto blanco al pasar el mouse */
 button {
   border-radius: 8px;
   padding: 0.6em 1.2em;
