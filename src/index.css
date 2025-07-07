@@ -59,23 +59,3 @@ button:hover {
 .footer-icon:hover {
   color: #ffffff !important; /* Se vuelven blancos al pasar el mouse */
 }
-
-/* Estilo para la portada adaptado a móvil */
-.portada {
-  background-image: url('/Portada.jpg');  /* si está en public/, usa esta ruta */
-  background-size: cover;                 /* Cubre todo el contenedor */
-  background-position: center center;     /* Centra la imagen */
-  background-repeat: no-repeat;           /* No se repite */
-  width: 100vw;                           /* 100% del ancho de la pantalla */
-  height: 100vh;                          /* 100% de la altura visible */
-  margin-top: 56px;                       /* Deja espacio para el navbar fijo */
-  overflow: hidden;                       /* Oculta desbordes */
-  position: relative;                     /* Por si quieres agregar texto encima */
-}
-
-/* En celulares chicos, ajustamos un poco */
-@media (max-width: 576px) {
-  .portada {
-    background-position: top center;  /* Muestra mejor la parte superior */
-  }
-}
