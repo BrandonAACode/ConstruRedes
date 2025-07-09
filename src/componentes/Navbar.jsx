@@ -6,7 +6,7 @@ function Navbar() {
   // Estado para saber si el usuario hizo scroll y cambiar el estilo del menú
   const [scrolled, setScrolled] = useState(false);
 
-  // Hook que escucha el evento scroll y cambia el estado "scrolled"
+  // Hook que cambia el estado "scrolled"
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50); // Si se desplazó más de 50px, aplica fondo sólido
@@ -29,7 +29,6 @@ function Navbar() {
       <div className="container">
         {/* Inicio, redirige al inicio */}
         <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
-          {/* Ruta corregida con import.meta.env.BASE_URL para producción */}
           <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Logo ConstruRedes" height="30" />
           <span className="fw-bold">ConstruRedes</span>
         </Link>

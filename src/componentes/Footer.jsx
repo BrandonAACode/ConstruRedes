@@ -6,7 +6,6 @@ function Footer() {
           {/* Columna 1: Empresa */}
           <div className="col-md-4 mb-4">
             <div className="d-flex align-items-center gap-2">
-              {/* ✅ Ruta del logo corregida para producción con import.meta.env.BASE_URL */}
               <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Logo" height="30" />
               <h5 className="mb-0">ConstruRedes</h5>
             </div>
