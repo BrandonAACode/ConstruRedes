@@ -7,41 +7,10 @@
     <title>Vite + React</title>
     <!-- Fuente Google - Poppins -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/ConstruRedes/assets/index-Bopczz4F.js"></script>
+    <script type="module" crossorigin src="/ConstruRedes/assets/index-Bd8OMOW2.js"></script>
     <link rel="stylesheet" crossorigin href="/ConstruRedes/assets/index-Bz-BG8cq.css">
   </head>
   <body>
     <div id="root"></div>
-    <!-- Script para form modal de contacto -->
-    <script>
-  function mostrarSubservicios(tipo) {
-    const subtipo = document.getElementById("subtipo");
-    subtipo.innerHTML = "";
-
-    const opciones = {
-      construccion: ["Remodelación", "Pintura", "Tabiquería", "Electricidad", "Cerámicas"],
-      redes: ["CCTV", "Control de Acceso", "Redes LAN y Switches"]
-    };
-
-    if (opciones[tipo]) {
-      opciones[tipo].forEach(servicio => {
-        const opt = document.createElement("option");
-        opt.value = servicio;
-        opt.textContent = servicio;
-        subtipo.appendChild(opt);
-      });
-    } else {
-      const opt = document.createElement("option");
-      opt.textContent = "Seleccione un tipo primero";
-      subtipo.appendChild(opt);
-    }
-  }
-
-  function enviarFormulario(e) {
-    e.preventDefault();
-    alert("✅ Tu solicitud fue enviada correctamente. Nos contactaremos pronto.");
-    return false;
-  }
-</script>
   </body>
 </html>
