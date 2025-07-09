@@ -60,7 +60,14 @@ function Navbar() {
               <Link className="nav-link" to="/servicios">Servicios</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contacto">Contacto</Link>
+              <a
+              className="nav-link"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#modalContacto"
+              >
+                Contacto
+                </a>
             </li>
           </ul>
         </div>

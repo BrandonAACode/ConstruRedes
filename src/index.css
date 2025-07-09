@@ -59,3 +59,10 @@ button:hover {
 .footer-icon:hover {
   color: #ffffff !important; /* Se vuelven blancos al pasar el mouse */
 }
+
+body {
+  background-color: #000; /* fondo negro general */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
