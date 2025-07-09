@@ -11,36 +11,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <!-- Script para form modal de contacto -->
-    <script>
-  function mostrarSubservicios(tipo) {
-    const subtipo = document.getElementById("subtipo");
-    subtipo.innerHTML = "";
-
-    const opciones = {
-      construccion: ["Remodelación", "Pintura", "Tabiquería", "Electricidad", "Cerámicas"],
-      redes: ["CCTV", "Control de Acceso", "Redes LAN y Switches"]
-    };
-
-    if (opciones[tipo]) {
-      opciones[tipo].forEach(servicio => {
-        const opt = document.createElement("option");
-        opt.value = servicio;
-        opt.textContent = servicio;
-        subtipo.appendChild(opt);
-      });
-    } else {
-      const opt = document.createElement("option");
-      opt.textContent = "Seleccione un tipo primero";
-      subtipo.appendChild(opt);
-    }
-  }
-
-  function enviarFormulario(e) {
-    e.preventDefault();
-    alert("✅ Tu solicitud fue enviada correctamente. Nos contactaremos pronto.");
-    return false;
-  }
-</script>
   </body>
 </html>
