@@ -1,39 +1,41 @@
-// Importamos React hooks y el componente Link para navegar sin recargar la página
-import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Navbar() {
-  // Estado para saber si el usuario hizo scroll y cambiar el estilo del menú
   const [scrolled, setScrolled] = useState(false);
 
-  // Hook que cambia el estado "scrolled"
+  // Detecta el scroll para aplicar fondo sólido
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // Si se desplazó más de 50px, aplica fondo sólido
+      setScrolled(window.scrollY > 50);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav
-      className={`navbar navbar-expand-lg bg-azulrey navbar-dark fixed-top px-4`}
+      className="navbar navbar-expand-lg navbar-dark fixed-top px-4"
       style={{
-        backgroundColor: scrolled ? '#4169e1' : 'rgba(65, 105, 225, 0.85)', // fondo dinámico
-        transition: 'background-color 0.3s ease', // transición suave al hacer scroll
-        zIndex: 10,
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.4)', // sombra para resaltar el menú
+        backgroundColor: scrolled ? '#1c4966' : 'transparent',
+        transition: 'background-color 0.4s ease-in-out',
+        backdropFilter: 'blur(6px)', // Desenfoque elegante
+        boxShadow: scrolled ? '0 2px 10px rgba(0,0,0,0.4)' : 'none',
+        zIndex: 9999,
       }}
     >
       <div className="container">
-        {/* Inicio, redirige al inicio */}
-        <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
-          <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Logo ConstruRedes" height="30" />
+        {/* Logo + Nombre que vuelve al tope */}
+        <a href="#" className="navbar-brand d-flex align-items-center gap-2">
+          <img
+            src={`${import.meta.env.BASE_URL}logo.jpg`}
+            alt="Logo ConstruRedes"
+            height="32"
+            style={{ borderRadius: '4px' }}
+          />
           <span className="fw-bold">ConstruRedes</span>
-        </Link>
+        </a>
 
-        {/* Botón de hamburguesa visible en pantallas pequeñas (menú colapsable) */}
+        {/* Botón del menú hamburguesa para móvil */}
         <button
           className="navbar-toggler"
           type="button"
@@ -46,27 +48,19 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Enlaces de navegación principales */}
+        {/* Menú principal */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Inicio</Link>
+              <a className="nav-link" href="#quienes-somos">Quiénes Somos</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/quienes-somos">Quiénes Somos</Link>
+              <a className="nav-link" href="#servicios">Servicios</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/servicios">Servicios</Link>
-            </li>
-            <li className="nav-item">
-              <a
-              className="nav-link"
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#modalContacto"
-              >
+              <a className="nav-link" data-bs-toggle="modal" data-bs-target="#modalContacto">
                 Contacto
-                </a>
+              </a>
             </li>
           </ul>
         </div>

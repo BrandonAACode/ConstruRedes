@@ -71,16 +71,22 @@ function ModalContacto() {
                 <label htmlFor="region" className="form-label">Región</label>
                 <select className="form-select" id="region" required>
                   <option value="">Seleccione su región</option>
-                  <option>Región Metropolitana de Santiago</option>
+                  <option>Metropolitana de Santiago</option>
                   <option>Valparaíso</option>
+                  <option>O'Higgins</option>
+                  <option>Maule</option>
+                  <option>Ñuble</option>
                   <option>Biobío</option>
                   <option>Araucanía</option>
                   <option>Los Lagos</option>
-                  <option>Coquimbo</option>
-                  <option>Antofagasta</option>
+                  <option>Los Rìos</option>
+                  <option>Aysén</option>
                   <option>Magallanes</option>
                   <option>Tarapacá</option>
-                  {/* Puedes agregar más regiones si quieres */}
+                  <option>Arica y Parinacota</option>
+                  <option>Antofagasta</option>
+                  <option>Atacama</option>
+                  <option>Coquimbo</option>
                 </select>
               </div>
 

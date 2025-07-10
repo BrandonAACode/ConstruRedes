@@ -1,68 +1,105 @@
-/* Define el color de fondo negro y texto azul rey en todo el sitio, además de tamaño */
+/* Fondo crema claro y texto azul rey */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #000;
-  color: rgb(153, 153, 153); /* Gris personalizado usado en texto principal */
+  background-color: #fdf6ec;
+  color: #1c4966;
   font-family: 'Poppins', sans-serif;
 }
 
-/* Hace que el contenedor raíz (root) use layout de página completa */
+/* Root layout */
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Asegura que el contenido del sitio se expanda y mantenga el footer al final */
+/* Área principal */
 main {
   flex: 1;
-  background-color: #000;
+  background-color: #fdf6ec;
 }
 
-/* Estilo base de enlaces: azul rey sin subrayado */
+/* Enlaces */
 a {
   color: #1c4966;
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline; /* Al pasar el mouse se subraya */
+  text-decoration: underline;
 }
 
-/* Botones base del sitio: oscuros con texto azul, se pintan azul y texto blanco al pasar el mouse */
+/* Botones base */
 button {
   border-radius: 8px;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #1c4966;
   color: white;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 button:hover {
-  background-color: #1c4966; /* Cambia a azul al pasar el mouse */
+  background-color: #163952;
 }
 
-/* Clase reutilizable para fondo azul rey */
+/* Azul rey para secciones */
 .bg-azulrey {
   background-color: #1c4966 !important;
 }
 
-/* Estilo de los íconos del footer con efecto hover blanco */
+/* Azul oscuro para tarjetas */
+.bg-azuloscuro {
+  background-color: #163952 !important;
+}
+
+/* Íconos footer */
 .footer-icon {
   transition: color 0.3s ease;
 }
 .footer-icon:hover {
-  color: #ffffff !important; /* Se vuelven blancos al pasar el mouse */
+  color: #ffffff !important;
 }
 
 body {
-  background-color: #000; /* fondo negro general */
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.portada-home {
+  background-image: url('/Portada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 56px; /* para no tapar el navbar */
+  position: relative;
+}
+
+/* Animación de entrada suave */
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
