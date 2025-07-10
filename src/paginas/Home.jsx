@@ -37,10 +37,8 @@ function Home() {
         <div className="container">
           <h2 className="text-center mb-4"><b>¿Quiénes Somos?</b></h2>
           <p className="lead text-center">
-            <i>En <strong>ConstruRedes</strong> nos especializamos en ofrecer servicios integrales en construcción y redes, combinando experiencia técnica, compromiso con la calidad y una atención personalizada. Nuestro equipo está compuesto por profesionales capacitados en trabajos de remodelación, terminaciones, tabiquería, electricidad y más, asegurando un resultado confiable y estético. Además, contamos con personal calificado en tecnologías de seguridad y redes como CCTV, control de acceso y cableado estructurado.</i>
-          </p>
-          <p>
-            Cumplimos con las normativas vigentes en cada área, tales como la certificación SEC en trabajos eléctricos, buenas prácticas de construcción en tabiquería y terminaciones, y normas de instalación para sistemas de seguridad.Nos adaptamos a cada proyecto según las necesidades de nuestros clientes, brindando soluciones duraderas y seguras.
+            <i>En <strong>ConstruRedes</strong> nos especializamos en ofrecer servicios integrales en construcción y redes, combinando experiencia técnica, compromiso con la calidad y una atención personalizada. Nuestro equipo está compuesto por profesionales capacitados en trabajos de remodelación, terminaciones, tabiquería, electricidad y más, asegurando un resultado confiable y estético. Además, contamos con personal calificado en tecnologías de seguridad y redes como CCTV, control de acceso y cableado estructurado.
+            Cumplimos con las normativas vigentes en cada área, tales como la certificación SEC en trabajos eléctricos, buenas prácticas de construcción en tabiquería y terminaciones, y normas de instalación para sistemas de seguridad.Nos adaptamos a cada proyecto según las necesidades de nuestros clientes, brindando soluciones duraderas y seguras.</i>
           </p>
         </div>
       </section>
@@ -91,6 +89,11 @@ function Home() {
           {mostrarConstruccion && (
             <div className="mt-5">
               <ServiciosConstruccion />
+              <div className="text-center mt-3">
+                <button className="btn btn-outline-danger" onClick={() => setMostrarConstruccion(false)}>
+                Cerrar Servicios de Construcción
+                </button>
+              </div>
             </div>
           )}
 
@@ -98,6 +101,11 @@ function Home() {
           {mostrarRedes && (
             <div className="mt-5">
               <ServiciosRedes />
+              <div className="text-center mt-3">
+                <button className="btn btn-outline-danger" onClick={() => setMostrarRedes(false)}>
+                Cerrar servicios de Redes
+                </button>
+              </div>
             </div>
           )}
         </div>

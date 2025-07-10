@@ -103,3 +103,12 @@ html {
     transform: translateY(0);
   }
 }
+
+.modal.fade .modal-dialog {
+  transform: translateY(100px);
+  transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
