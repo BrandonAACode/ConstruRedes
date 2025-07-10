@@ -23,7 +23,7 @@ function Navbar() {
       <div className="container">
         {/* Logo + nombre empresa */}
         <Link className={`navbar-brand fw-bold d-flex align-items-center ${scrolled ? 'text-white' : 'text-dark'}`} to="/">
-          <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Logo" height="50" />
+          <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Logo" height="40" />
           ConstruRedes
         </Link>
 
