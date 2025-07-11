@@ -112,3 +112,52 @@ html {
 .modal.show .modal-dialog {
   transform: translateY(0);
 }
+
+/* Tarjetas de servicios con estilo moderno */
+.servicio-card {
+  background-color: #163952;         /* Azul oscuro */
+  border: none;
+  border-radius: 12px;
+  color: white;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al pasar el mouse (zoom y sombra más intensa) */
+.servicio-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen en la tarjeta con borde redondeado arriba */
+.servicio-card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación en cascada para tarjetas */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Asegura que se aplique también en pantallas pequeñas */
+@media (max-width: 768px) {
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+}

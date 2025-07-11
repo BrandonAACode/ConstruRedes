@@ -5,20 +5,22 @@
 .categoria-box {
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 300px;
+  width: 100%;
   border-radius: 12px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .categoria-box:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .categoria-box .overlay {
-  background-color: rgba(28, 73, 102, 0.75); /* azul con opacidad */
+  background-color: rgba(28, 73, 102, 0.6);
   color: #fff;
   position: absolute;
   top: 0;
@@ -30,9 +32,9 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.4s ease;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
 }
 
 .categoria-box:hover .overlay {
@@ -44,6 +46,16 @@
 }
 
 body {
-  background-color: #fef9f2; /* crema suave */
+  background-color: #fef9f2; /* beige */
   color: #1c4966;            /* azul rey para texto */
+}
+
+@media (max-width: 768px) {
+  .categoria-box {
+    height: 200px;
+  }
+
+  .categoria-box .overlay {
+    font-size: 1.3rem;
+  }
 }

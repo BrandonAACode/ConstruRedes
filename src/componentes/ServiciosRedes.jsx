@@ -18,23 +18,27 @@ function ServiciosRedes() {
   ];
 
   return (
-    <div className="container py-5">
-      <h3 className="text-center mb-4">Servicios de Redes</h3>
-      <div className="row">
-        {servicios.map((serv, i) => (
-          <div className="col-md-4 mb-4" key={i}>
-            <div className="card h-100 bg-azuloscuro text-white shadow">
-              <img src={serv.img} className="card-img-top" alt={serv.titulo} />
-              <div className="card-body">
-                <h5 className="card-title">{serv.titulo}</h5>
-                <p className="card-text">{serv.desc}</p>
-              </div>
+  <div className="container py-5">
+    <h3 className="text-center mb-4">Servicios de Redes</h3>
+    <div className="row">
+      {servicios.map((serv, i) => (
+        <div
+        className="col-md-4 mb-4 fade-in-up"
+        key={i}
+        style={{ animationDelay: `${i * 0.2}s` }} // Retardo progresivo 
+        >
+          <div className="servicio-card">
+            <img src={serv.img} className="card-img-top" alt={serv.titulo} />
+            <div className="card-body">
+              <h5 className="card-title">{serv.titulo}</h5>
+              <p className="card-text">{serv.desc}</p>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
-  );
+  </div>
+);
 }
 
 export default ServiciosRedes;

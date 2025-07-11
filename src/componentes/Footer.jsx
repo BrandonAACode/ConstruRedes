@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-azulrey text-dark py-5 mt-5">
+    <footer className="bg-azulrey text-#fdf6ec py-5 mt-5">
       <div className="container">
         <div className="row text-center text-md-start">
           {/* Columna 1: Empresa */}
@@ -16,7 +16,7 @@ function Footer() {
           {/* Columna 2: Contacto */}
           <div className="col-md-4 mb-4">
             <h5 className="fw-bold">Contacto.</h5>
-            <p className="mb-1">📧 <a href="mailto:informaciones@construredes.cl" className="text-dark">informaciones@construredes.cl</a></p>
+            <p className="mb-1">📧 <a href="mailto:informaciones@construredes.cl" className="text-#fdf6ec">informaciones@construredes.cl</a></p>
             <p className="mb-1">📞 +56 9 1234 5678</p>
             <p className="mb-0">📍 Av. Vicuña Mackenna 3864, Santiago.</p>
           </div>
@@ -24,13 +24,13 @@ function Footer() {
           {/* Columna 3: Redes Sociales */}
           <div className="col-md-4 mb-4">
             <h5 className="fw-bold">Síguenos en nuestras redes sociales.</h5>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" className="text-dark fs-4 me-4 footer-icon">
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" className="text-#fdf6ec fs-4 me-4 footer-icon">
               <i className="bi bi-tiktok"></i>
             </a>
-            <a href="https://www.instagram.com/constru_redes?igsh=MXg0MTJoMWJnc29hbQ==" target="_blank" rel="noopener noreferrer" className="text-dark fs-4 me-4 footer-icon">
+            <a href="https://www.instagram.com/constru_redes?igsh=MXg0MTJoMWJnc29hbQ==" target="_blank" rel="noopener noreferrer" className="text-#fdf6ec fs-4 me-4 footer-icon">
               <i className="bi bi-instagram"></i>
             </a>
-            <a href="https://www.facebook.com/construredes.cad" target="_blank" rel="noopener noreferrer" className="text-dark fs-4 footer-icon">
+            <a href="https://www.facebook.com/construredes.cad" target="_blank" rel="noopener noreferrer" className="text-#fdf6ec fs-4 footer-icon">
               <i className="bi bi-facebook"></i>
             </a>
           </div>

@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       {/* Portada con texto */}
-      <header
+      <header id="top"
         className="d-flex align-items-center justify-content-center text-center text-white portada-home"
         style={{
           backgroundImage: `url('${import.meta.env.BASE_URL}Portada.jpg')`,
