@@ -24,10 +24,10 @@ function Home() {
           height: '100vh',
         }}
       >
-        <div className="bg-black bg-opacity-50 p-4 rounded animated fade-in">
+        <div className="bg-dark bg-opacity-50 p-4 rounded animated fade-in">
           <h1 className="display-4 fw-bold"><b>ConstruRedes</b></h1>
           <p className="lead"><i>Potenciamos tus ideas, creamos tu mundo.</i></p>
-          <a href="#servicios" className="btn btn-primary mt-3">{/* Boton para servicios */}
+          <a href="#servicios" className="btn btn-dark mt-3">{/* Boton para servicios */}
             Revisa nuestros trabajos y servicios
           </a>
         </div>
@@ -44,22 +44,27 @@ function Home() {
       </section>
 
       {/* Sección de categorías */}
-      <section id="servicios" className="py-5 bg-dark text-white">
+      <section id="servicios" className="py-5 bg-azulrey text-white">
         <div className="container">
+        </div>
           <h2 className="text-center mb-5">Áreas de Trabajo</h2>
           <div className="row">
             {/* Categoría: Construcción */}
             <div className="col-md-6 mb-4">
               <div
-                className="categoria-box"
-                onClick={() => {
-                  setMostrarConstruccion(true);
-                  setMostrarRedes(false);
-                }}
-                style={{
-                  backgroundImage: `url(${serviciosImg})`,
-                }}
+              className="categoria-box position-relative"
+              onClick={() => {
+                setMostrarConstruccion(true);
+                setMostrarRedes(false);
+              }}
               >
+                {/* Imagen */}
+                <img
+                src={serviciosImg}
+                alt="Construcción"
+                className="categoria-img"
+                />
+                {/* Overlay con nombre */}
                 <div className="overlay">
                   <h3>Construcción</h3>
                 </div>
@@ -69,21 +74,22 @@ function Home() {
             {/* Categoría: Redes */}
             <div className="col-md-6 mb-4">
               <div
-                className="categoria-box"
-                onClick={() => {
-                  setMostrarRedes(true);
-                  setMostrarConstruccion(false);
-                }}
-                style={{
-                  backgroundImage: `url(${redesImg})`,
-                }}
+              className="categoria-box position-relative"
+              onClick={() => {
+                setMostrarRedes(true);
+                setMostrarConstruccion(false);
+              }}
               >
-                <div className="overlay">
-                  <h3>Redes</h3>
-                </div>
+                <img
+                src={redesImg}
+                alt="Redes"
+                className="categoria-img"
+                />
+                  <div className="overlay">
+                    <h3>Redes</h3>
+                  </div>
               </div>
-            </div>
-          </div>
+           </div>
 
           {/* Mostrar tarjetas de construcción */}
           {mostrarConstruccion && (

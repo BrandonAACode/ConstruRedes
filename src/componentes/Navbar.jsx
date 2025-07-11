@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -14,7 +13,7 @@ function Navbar() {
     <nav
       className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'bg-azulrey navbar-dark' : 'navbar-light'}`}
       style={{
-        backgroundColor: scrolled ? '#1c4966' : 'rgba(253, 246, 236, 0.95)',
+        backgroundColor: scrolled ? 'beige' : 'beige',
         transition: 'background-color 0.3s ease',
         boxShadow: scrolled ? '0 2px 10px rgba(0, 0, 0, 0.2)' : 'none',
         zIndex: 10,
@@ -53,9 +52,9 @@ function Navbar() {
                 Servicios
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item d-flex align-items-center">
               <button
-                className={`btn btn-sm ms-2 ${scrolled ? 'btn-light text-dark' : 'btn-outline-primary'}`}
+                className={`btn btn-sm ms-2 ${scrolled ? 'btn-light text-dark' : 'btn-outline-dark'}`}
                 data-bs-toggle="modal"
                 data-bs-target="#modalContacto"
               >

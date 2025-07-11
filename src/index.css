@@ -1,9 +1,9 @@
-/* Fondo crema claro y texto azul rey */
+/* Fondo arena y texto azul rey */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fdf6ec;
+  background-color: burlywood;
   color: #1c4966;
   font-family: 'Poppins', sans-serif;
 }
@@ -18,7 +18,7 @@ html, body {
 /* Área principal */
 main {
   flex: 1;
-  background-color: #fdf6ec;
+  background-color: burlywood;
 }
 
 /* Enlaces */
@@ -38,7 +38,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1c4966;
-  color: white;
+  color: #fdf6ec;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -52,17 +52,12 @@ button:hover {
   background-color: #1c4966 !important;
 }
 
-/* Azul oscuro para tarjetas */
-.bg-azuloscuro {
-  background-color: #163952 !important;
-}
-
 /* Íconos footer */
 .footer-icon {
   transition: color 0.3s ease;
 }
 .footer-icon:hover {
-  color: #ffffff !important;
+  color: black !important;
 }
 
 body {
@@ -113,12 +108,20 @@ html {
   transform: translateY(0);
 }
 
-/* Tarjetas de servicios con estilo moderno */
+/* Imagen de servicios */
+.categoria-img {
+  height: 300px;               /* Altura fija */
+  width: 100%;                 /* Ocupar todo el ancho disponible */
+  object-fit: cover;           /* Recorta y ajusta manteniendo proporciones */
+  border-radius: 12px;
+}
+
+/* Tarjetas de servicios */
 .servicio-card {
-  background-color: #163952;         /* Azul oscuro */
+  background-color: beige;
   border: none;
   border-radius: 12px;
-  color: white;
+  color: #1c4966;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -130,7 +133,7 @@ html {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* Imagen en la tarjeta con borde redondeado arriba */
+/* Imagen en la tarjeta con borde redondeado */
 .servicio-card img {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
