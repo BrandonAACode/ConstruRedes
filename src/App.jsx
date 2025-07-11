@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Navbar from './componentes/Navbar';
 import Footer from './componentes/Footer';
 import Home from './paginas/Home';
+import './App.css';
 import ModalContacto from './componentes/ModalContacto';
 
 function App() {

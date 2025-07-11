@@ -23,11 +23,11 @@ function ServiciosRedes() {
     <div className="row">
       {servicios.map((serv, i) => (
         <div
-        className="col-md-4 mb-4 fade-in-up"
+        className="col-md-4 mb-4"
         key={i}
         style={{ animationDelay: `${i * 0.2}s` }} // Retardo progresivo 
         >
-          <div className="servicio-card">
+          <div className="servicio-card flip-card">
             <img src={serv.img} className="card-img-top" alt={serv.titulo} />
             <div className="card-body">
               <h5 className="card-title">{serv.titulo}</h5>

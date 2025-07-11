@@ -24,14 +24,14 @@ function Footer() {
           {/* Columna 3: Redes Sociales */}
           <div className="col-md-4 mb-4">
             <h5 className="fw-bold">Síguenos en nuestras redes sociales.</h5>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" className="text-white fs-4 me-4 footer-icon">
-              <i className="bi bi-tiktok"></i>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" className="text-white fs-4 me-4">
+              <i className="bi bi-tiktok footer-icon"></i>
             </a>
-            <a href="https://www.instagram.com/constru_redes?igsh=MXg0MTJoMWJnc29hbQ==" target="_blank" rel="noopener noreferrer" className="text-white fs-4 me-4 footer-icon">
-              <i className="bi bi-instagram"></i>
+            <a href="https://www.instagram.com/constru_redes?igsh=MXg0MTJoMWJnc29hbQ==" target="_blank" rel="noopener noreferrer" className="text-white fs-4 me-4">
+              <i className="bi bi-instagram footer-icon"></i>
             </a>
-            <a href="https://www.facebook.com/construredes.cad" target="_blank" rel="noopener noreferrer" className="text-white fs-4 footer-icon">
-              <i className="bi bi-facebook"></i>
+            <a href="https://www.facebook.com/construredes.cad" target="_blank" rel="noopener noreferrer" className="text-white fs-4">
+              <i className="bi bi-facebook footer-icon"></i>
             </a>
           </div>
         </div>
