@@ -27,6 +27,11 @@
 - Footer profesional con íconos de redes sociales e información de contacto
 
 ---
+## 🧠 Mis referencias de aprendizaje
+
+- Video aprendizaje para react: https://www.youtube.com/watch?v=pFyAu4R684s&t=12s
+- Inpirado en repositorio de plantilla Bootstrap: https://github.com/StartBootstrap/startbootstrap-creative
+---
 
 ## 🌐 Cómo ver el proyecto
 
